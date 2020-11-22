@@ -3,6 +3,7 @@ import {
   SEARCH_LOGS,
   LOGS_ERROR,
   SET_LOADING,
+  ADD_LOG,
 } from "../actions/types";
 
 const initialState = {
@@ -20,17 +21,27 @@ export default (state = initialState, action) => {
         logs: action.payload,
         loading: false,
       };
+
+    case ADD_LOG:
+      return {
+        ...state,
+        logs: [...state.logs, action.payload],
+        loading: false,
+      };
+
     case SET_LOADING:
       return {
         ...state,
         loading: true,
       };
+
     case LOGS_ERROR:
       console.error(action.payload);
       return {
         ...state,
         error: action.payload,
       };
+
     default:
       return state;
   }
