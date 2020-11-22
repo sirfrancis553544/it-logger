@@ -1,4 +1,5 @@
 import React, { useState, useEffect } from "react";
+// import TechSelectOptions from "../techs/TechSelectOptions";
 import { connect } from "react-redux";
 import PropTypes from "prop-types";
 import M from "materialize-css/dist/js/materialize.min.js";
@@ -30,9 +31,9 @@ const EditLogModal = ({ current, updateLog }) => {
       };
 
       updateLog(updLog);
-      M.toast({ html: `Log update by ${tech}` });
+      M.toast({ html: `Log updated by ${tech}` });
 
-      //clear fields
+      // Clear Fields
       setMessage("");
       setTech("");
       setAttention(false);
@@ -65,12 +66,11 @@ const EditLogModal = ({ current, updateLog }) => {
               <option value="" disabled>
                 Select Technician
               </option>
-              <option value="John Doe">John Doe</option>
-              <option value="Sam Smith">Sam Smith</option>
-              <option value="Jen Williams">Jen Williams</option>
+              {/* <TechSelectOptions /> */}
             </select>
           </div>
         </div>
+
         <div className="row">
           <div className="input-field">
             <p>
@@ -92,7 +92,7 @@ const EditLogModal = ({ current, updateLog }) => {
         <a
           href="#!"
           onClick={onSubmit}
-          className="modal-close waves-effect blue waves-green btn"
+          className="modal-close waves-effect blue waves-light btn"
         >
           Enter
         </a>

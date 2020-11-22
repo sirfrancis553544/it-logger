@@ -1,25 +1,18 @@
 {
   "logs": [
     {
-      "message": "fix plug 001",
-      "attention": true,
-      "tech": "John Doe",
-      "date": "2020-11-22T06:57:09.155Z",
-      "id": 1
+      "message": "fix plug with react",
+      "attention": false,
+      "tech": "Sam Smith",
+      "date": "2020-11-22T08:11:38.943Z",
+      "id": 7
     },
     {
-      "message": "make react app",
+      "id": 8,
+      "message": "fix react with?",
       "attention": true,
       "tech": "Sam Smith",
-      "date": "2020-11-22T07:54:42.031Z",
-      "id": 4
-    },
-    {
-      "message": "fix plug",
-      "attention": true,
-      "tech": "John Doe",
-      "date": "2020-11-22T08:00:56.135Z",
-      "id": 5
+      "date": "2020-11-22T08:13:48.570Z"
     }
   ],
   "techs": [
