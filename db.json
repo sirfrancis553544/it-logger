@@ -4,8 +4,8 @@
       "id": 7,
       "message": "fix plug with react",
       "attention": true,
-      "tech": " John\n      Doe",
-      "date": "2020-11-23T06:36:58.069Z"
+      "tech": " Jen  Williams",
+      "date": "2020-11-23T07:18:50.126Z"
     },
     {
       "id": 8,
@@ -30,16 +30,6 @@
       "firstName": "Jen",
       "lastName": "Williams",
       "id": 3
-    },
-    {
-      "firstName": "Daniel",
-      "lastName": "Francis",
-      "id": 4
-    },
-    {
-      "firstName": "Amy",
-      "lastName": "Schemer ",
-      "id": 5
     }
   ]
 }
