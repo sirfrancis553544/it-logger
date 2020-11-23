@@ -48,6 +48,12 @@ export default (state = initialState, action) => {
         ),
       };
 
+    case SEARCH_LOGS:
+      return {
+        ...state,
+        logs: action.payload,
+      };
+
     case SET_CURRENT:
       return {
         ...state,
